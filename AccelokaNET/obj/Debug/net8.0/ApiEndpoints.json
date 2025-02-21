@@ -1,0 +1,132 @@
+[
+  {
+    "ContainingType": "Acceloka.API.Controllers.BookedTicketController",
+    "Method": "BookTickets",
+    "RelativePath": "api/v1/book-ticket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Acceloka.API.Models.BookTicketRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Acceloka.API.Controllers.BookedTicketController",
+    "Method": "EditBookedTickets",
+    "RelativePath": "api/v1/book-ticket/edit-booked-ticket/{bookedTicketId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookedTicketId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "System.Collections.Generic.List\u00601[[AccelokaNET.Models.TicketBookingModel, AccelokaNET, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Acceloka.API.Controllers.BookedTicketController",
+    "Method": "GetBookedTicketDetails",
+    "RelativePath": "api/v1/book-ticket/get-booked-ticket/{bookedTicketId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookedTicketId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Acceloka.API.Controllers.BookedTicketController",
+    "Method": "RevokeTicket",
+    "RelativePath": "api/v1/book-ticket/revoke-ticket/{bookedTicketId}/{kodeTiket}/{qty}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookedTicketId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "kodeTiket",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "qty",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Acceloka.API.Controllers.TiketController",
+    "Method": "GetAvailableTickets",
+    "RelativePath": "api/v1/tikets/get-available-ticket",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ticketCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ticketName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "maxPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "startDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "orderBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "orderState",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

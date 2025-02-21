@@ -1,0 +1,14 @@
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\bin\Debug\net8.0\AccelokaDb.Entities.deps.json
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\bin\Debug\net8.0\AccelokaDb.Entities.dll
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\bin\Debug\net8.0\AccelokaDb.Entities.pdb
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\obj\Debug\net8.0\AccelokaDb.Entities.csproj.AssemblyReference.cache
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\obj\Debug\net8.0\AccelokaDb.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\obj\Debug\net8.0\AccelokaDb.Entities.AssemblyInfoInputs.cache
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\obj\Debug\net8.0\AccelokaDb.Entities.AssemblyInfo.cs
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\obj\Debug\net8.0\AccelokaDb.Entities.csproj.CoreCompileInputs.cache
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\obj\Debug\net8.0\AccelokaDb.Entities.dll
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\obj\Debug\net8.0\refint\AccelokaDb.Entities.dll
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\obj\Debug\net8.0\AccelokaDb.Entities.pdb
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\obj\Debug\net8.0\ref\AccelokaDb.Entities.dll
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\bin\Debug\net8.0\AccelokaDb.Entities.runtimeconfig.json
+C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaDb.Entities\obj\Debug\net8.0\AccelokaDb.Entities.genruntimeconfig.cache

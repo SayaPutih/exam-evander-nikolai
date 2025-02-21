@@ -1,0 +1,6 @@
+@AccelokaNET_HostAddress = http://localhost:5048
+
+GET {{AccelokaNET_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

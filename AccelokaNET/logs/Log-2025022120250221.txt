@@ -1,0 +1,63 @@
+2025-02-21 10:55:29.995 +07:00 [INF] Now listening on: http://localhost:5048
+2025-02-21 10:55:30.078 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-21 10:55:30.078 +07:00 [INF] Hosting environment: Development
+2025-02-21 10:55:30.078 +07:00 [INF] Content root path: C:\Users\nikol\OneDrive\Documents\AccelokaNET\AccelokaNET
+2025-02-21 10:55:30.124 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/index.html - null null
+2025-02-21 10:55:30.286 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/index.html - 200 null text/html;charset=utf-8 162.0542ms
+2025-02-21 10:55:30.346 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-21 10:55:30.346 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_vs/browserLink - null null
+2025-02-21 10:55:30.350 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.502ms
+2025-02-21 10:55:30.390 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.6475ms
+2025-02-21 10:55:30.539 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - null null
+2025-02-21 10:55:30.556 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.8476ms
+2025-02-21 10:55:36.770 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5048/api/v1/book-ticket - application/json 92
+2025-02-21 10:55:36.775 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.BookedTicketController.BookTickets (AccelokaNET)'
+2025-02-21 10:55:36.795 +07:00 [INF] Route matched with {action = "BookTickets", controller = "BookedTicket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BookTickets(Acceloka.API.Models.BookTicketRequest) on controller Acceloka.API.Controllers.BookedTicketController (AccelokaNET).
+2025-02-21 10:55:36.890 +07:00 [INF] Booking tickets: [{"KodeTiket":"string","Quantity":2147483647,"$type":"TicketBooking"}]
+2025-02-21 10:55:37.665 +07:00 [INF] Executed DbCommand (39ms) [Parameters=[@__request_Item1_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.kode_tiket = @__request_Item1_0
+LIMIT 1
+2025-02-21 10:55:37.683 +07:00 [WRN] Kode tiket tidak terdaftar: string
+2025-02-21 10:55:37.683 +07:00 [INF] Successfully booked tickets: {"error":"Kode tiket tidak terdaftar"}
+2025-02-21 10:55:37.688 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-21 10:55:37.694 +07:00 [INF] Executed action Acceloka.API.Controllers.BookedTicketController.BookTickets (AccelokaNET) in 896.4345ms
+2025-02-21 10:55:37.694 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.BookedTicketController.BookTickets (AccelokaNET)'
+2025-02-21 10:55:37.702 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5048/api/v1/book-ticket - 200 null application/json; charset=utf-8 932.4016ms
+2025-02-21 10:55:41.111 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5048/api/v1/book-ticket - application/json 92
+2025-02-21 10:55:41.113 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.BookedTicketController.BookTickets (AccelokaNET)'
+2025-02-21 10:55:41.113 +07:00 [INF] Route matched with {action = "BookTickets", controller = "BookedTicket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BookTickets(Acceloka.API.Models.BookTicketRequest) on controller Acceloka.API.Controllers.BookedTicketController (AccelokaNET).
+2025-02-21 10:55:41.117 +07:00 [INF] Booking tickets: [{"KodeTiket":"string","Quantity":2147483647,"$type":"TicketBooking"}]
+2025-02-21 10:55:41.160 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[@__request_Item1_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.kode_tiket = @__request_Item1_0
+LIMIT 1
+2025-02-21 10:55:41.161 +07:00 [WRN] Kode tiket tidak terdaftar: string
+2025-02-21 10:55:41.161 +07:00 [INF] Successfully booked tickets: {"error":"Kode tiket tidak terdaftar"}
+2025-02-21 10:55:41.162 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-21 10:55:41.163 +07:00 [INF] Executed action Acceloka.API.Controllers.BookedTicketController.BookTickets (AccelokaNET) in 49.4205ms
+2025-02-21 10:55:41.163 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.BookedTicketController.BookTickets (AccelokaNET)'
+2025-02-21 10:55:41.164 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5048/api/v1/book-ticket - 200 null application/json; charset=utf-8 52.9726ms
+2025-02-21 10:55:54.489 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5048/api/v1/book-ticket - application/json 83
+2025-02-21 10:55:54.490 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.BookedTicketController.BookTickets (AccelokaNET)'
+2025-02-21 10:55:54.490 +07:00 [INF] Route matched with {action = "BookTickets", controller = "BookedTicket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BookTickets(Acceloka.API.Models.BookTicketRequest) on controller Acceloka.API.Controllers.BookedTicketController (AccelokaNET).
+2025-02-21 10:55:54.493 +07:00 [INF] Booking tickets: [{"KodeTiket":"TIK022","Quantity":1,"$type":"TicketBooking"}]
+2025-02-21 10:55:54.538 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request_Item1_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.kode_tiket = @__request_Item1_0
+LIMIT 1
+2025-02-21 10:55:54.654 +07:00 [INF] Tiket berhasil dibooking, Kode: TIK022, Quantity: 1
+2025-02-21 10:55:54.733 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?', @p2='?' (DbType = Int32), @p4='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO booked_tickets (booked_date, kode_tiket, quantity)
+VALUES (@p0, @p1, @p2)
+RETURNING id;
+UPDATE tickets SET sisa_quota = @p3
+WHERE id = @p4;
+2025-02-21 10:55:54.759 +07:00 [INF] Successfully booked tickets: {"priceSummary":150000.00,"ticketsPerCategories":[{"categoryName":"Konser","summaryPrice":150000.00,"tickets":[{"ticketCode":"TIK022","ticketName":"Konser Band AAA","price":150000.00}]}]}
+2025-02-21 10:55:54.760 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`2[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-21 10:55:54.769 +07:00 [INF] Executed action Acceloka.API.Controllers.BookedTicketController.BookTickets (AccelokaNET) in 278.7508ms
+2025-02-21 10:55:54.769 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.BookedTicketController.BookTickets (AccelokaNET)'
+2025-02-21 10:55:54.769 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5048/api/v1/book-ticket - 200 null application/json; charset=utf-8 280.2318ms
